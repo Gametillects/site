@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gametillects Inc. - Educational Games That Inspire Learning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .game-card {
+            transition: all 0.3s ease;
+            background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+        }
+        
+        .game-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .floating-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .stats-counter {
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">G</span>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold gradient-text">Gametillects Inc.</h1>
+                        <p class="text-xs text-gray-500">Est. 2005</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 transition-colors">Home</a>
+                    <a href="#games" class="text-gray-700 hover:text-blue-600 transition-colors">Games</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors">About</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
+                    <a href="#stack-match" class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-2 rounded-lg hover:opacity-90 transition-opacity">Play Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-20 pb-16 gradient-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center text-white py-20">
+                <div class="floating-animation inline-block mb-8">
+                    <div class="w-24 h-24 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-4xl">🎮</span>
+                    </div>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                    Gamification of <span class="text-yellow-300">Learning</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90">
+                    Transforming education through engaging, interactive games that make learning fun and effective for children ages 6-14.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#games" class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-yellow-300 transition-colors">
+                        Explore Our Games
+                    </a>
+                    <a href="#stack-match" class="bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-full font-semibold hover:bg-white/30 transition-colors">
+                        Play Stack & Match
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="stats-counter">19</div>
+                    <p class="text-gray-600 font-medium">Years in Business</p>
+                </div>
+                <div>
+                    <div class="stats-counter">5+</div>
+                    <p class="text-gray-600 font-medium">Educational Games</p>
+                </div>
+                <div>
+                    <div class="stats-counter">K-8</div>
+                    <p class="text-gray-600 font-medium">Grade Levels</p>
+                </div>
+                <div>
+                    <div class="stats-counter">100%</div>
+                    <p class="text-gray-600 font-medium">Educational Focus</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Portfolio -->
+    <section id="games" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-4">Our Game Portfolio</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Each game is carefully designed to combine fun with learning, creating engaging educational experiences.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Stack and Match -->
+                <div class="game-card rounded-2xl p-6 border border-gray-200">
+                    <div class="w-16 h-16 bg-gradient-to-br from-red-400 to-pink-500 rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-white text-2xl font-bold">SM</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Stack and Match</h3>
+                    <p class="text-gray-600 mb-4">Interactive tile-stacking game that teaches letter recognition, color matching, and word building skills.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Literacy</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Ages 4-8</span>
+                    </div>
+                    <a href="#stack-match" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700">
+                        Play Now →
+                    </a>
+                </div>
+
+                <!-- Aram Learns Armenian -->
+                <div class="game-card rounded-2xl p-6 border border-gray-200">
+                    <div class="w-16 h-16 bg-gradient-to-br from-orange-400 to-red-500 rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-white text-2xl font-bold">ALA</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Aram Learns Armenian</h3>
+                    <p class="text-gray-600 mb-4">Cultural and language learning game that introduces Armenian alphabet, words, and cultural concepts.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Language</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Ages 6-12</span>
+                    </div>
+                    <span class="text-gray-500 font-medium">Available in Stores</span>
+                </div>
+
+                <!-- Fraction Action -->
+                <div class="game-card rounded-2xl p-6 border border-gray-200">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-white text-2xl font-bold">FA</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Fraction Action</h3>
+                    <p class="text-gray-600 mb-4">Makes learning fractions fun and intuitive through visual gameplay and interactive challenges.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Math</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Ages 8-12</span>
+                    </div>
+                    <span class="text-gray-500 font-medium">Coming Soon</span>
+                </div>
+
+                <!-- Alphabanasta -->
+                <div class="game-card rounded-2xl p-6 border border-gray-200">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-400 to-emerald-500 rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-white text-2xl font-bold">AB</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Alphabanasta</h3>
+                    <p class="text-gray-600 mb-4">Literacy-focused game that builds vocabulary, spelling, and reading comprehension skills.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Literacy</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Ages 6-10</span>
+                    </div>
+                    <span class="text-gray-500 font-medium">In Development</span>
+                </div>
+
+                <!-- Climate Games -->
+                <div class="game-card rounded-2xl p-6 border border-gray-200">
+                    <div class="w-16 h-16 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-white text-2xl">🌱</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Eco-Learning Series</h3>
+                    <p class="text-gray-600 mb-4">Educational games focusing on climate change, entrepreneurship, and eco-technologies.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Science</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Ages 8-14</span>
+                    </div>
+                    <span class="text-gray-500 font-medium">Planned</span>
+                </div>
+
+                <!-- Future Games -->
+                <div class="game-card rounded-2xl p-6 border border-gray-200 bg-gradient-to-br from-gray-50 to-gray-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-gray-400 to-gray-500 rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-white text-2xl">+</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">More Games Coming</h3>
+                    <p class="text-gray-600 mb-4">We're constantly developing new educational games to support different learning objectives.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Various</span>
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">All Ages</span>
+                    </div>
+                    <span class="text-gray-500 font-medium">Stay Tuned!</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audiences -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold gradient-text mb-4">Who We Serve</h2>
+                <p class="text-xl text-gray-600">Educational games for every learning environment</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl">👨‍👩‍👧‍👦</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Parents & Families</h3>
+                    <p class="text-gray-600">Engaged parents looking to support their children's learning at home</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl">👩‍🏫</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Educators</h3>
+                    <p class="text-gray-600">Teachers and schools seeking innovative classroom tools</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl">🏠</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Homeschoolers</h3>
+                    <p class="text-gray-600">Homeschooling families creating engaging curriculum</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl">🏢</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Organizations</h3>
+                    <p class="text-gray-600">Daycares, community centers, and alternative schools</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold gradient-text mb-8">About Gametillects Inc.</h2>
+                <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                    Founded in 2005, Gametillects Inc. has been at the forefront of educational gaming for nearly two decades. 
+                    Our mission is simple: transform learning through the power of play. We believe that when children are 
+                    engaged and having fun, they learn more effectively and retain information longer.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">🎯</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Our Mission</h3>
+                        <p class="text-gray-600">Gamification of learning to make education engaging and effective</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">📚</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Our Focus</h3>
+                        <p class="text-gray-600">Educational games for grade school students (K-8) across core subjects</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">🏆</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Our Experience</h3>
+                        <p class="text-gray-600">19 years of creating innovative educational games and learning tools</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stack and Match Demo -->
+    <section id="stack-match" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-white mb-4">Try Stack and Match</h2>
+                <p class="text-xl text-gray-300 mb-8">Experience our latest educational game right in your browser!</p>
+                <a href="https://gametillects.github.io/stack-match-game" target="_blank" 
+                   class="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-full font-semibold hover:opacity-90 transition-opacity text-lg">
+                    Play Stack and Match →
+                </a>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-2xl p-8">
+                    <h3 class="text-2xl font-bold mb-4">About Stack and Match</h3>
+                    <p class="text-gray-600 mb-6">
+                        Stack and Match is an innovative educational game that combines color recognition, letter learning, 
+                        and shape identification in a fun, interactive experience. Originally designed as a physical board game, 
+                        we've brought it to the digital world with enhanced features and accessibility.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-bold mb-2">Learning Objectives:</h4>
+                            <ul class="text-gray-600 space-y-1">
+                                <li>• Letter recognition and phonics</li>
+                                <li>• Color identification and matching</li>
+                                <li>• Shape recognition</li>
+                                <li>• Pattern completion</li>
+                                <li>• Motor skills development</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold mb-2">Key Features:</h4>
+                            <ul class="text-gray-600 space-y-1">
+                                <li>• Drag-and-drop gameplay</li>
+                                <li>• Adaptive difficulty levels</li>
+                                <li>• Visual and audio feedback</li>
+                                <li>• Progress tracking</li>
+                                <li>• Mobile-friendly design</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold gradient-text mb-8">Get in Touch</h2>
+                <p class="text-xl text-gray-600 mb-12">
+                    Interested in our educational games? We'd love to hear from you!
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">📧</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Email Us</h3>
+                        <p class="text-gray-600">info@gametillects.com</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">🏢</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Business Inquiries</h3>
+                        <p class="text-gray-600">partnerships@gametillects.com</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">🎮</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Game Support</h3>
+                        <p class="text-gray-600">support@gametillects.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-3 mb-4">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">G</span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">Gametillects Inc.</h3>
+                        <p class="text-sm text-gray-400">Educational Games Since 2005</p>
+                    </div>
+                </div>
+                
+                <p class="text-gray-400 mb-6">
+                    Transforming education through the gamification of learning.
+                </p>
+                
+                <div class="border-t border-gray-800 pt-6">
+                    <p class="text-gray-400 text-sm">
+                        © 2025 Gametillects Inc. All rights reserved. | Established 2005
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add active class to nav links on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('nav a[href^="#"]');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-blue-600');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('text-blue-600');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
